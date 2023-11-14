@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Clase repaso formularios</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="boton-arrepentimiento">
+        <div class="textos-arrepentimiento">
+          <h2>Botón de arrepentimiento</h2>
+        </div>
+        <form method="POST" class="arrepentimiento">
+          <!-- ROW 1 -->
+          <div class="row">
+            <div class="inputs-cols">
+              <label for="empresa">Empresa</label>
+              <input type="text" name="empresa" id="empresa" />
+            </div>
+            <div class="inputs-cols">
+              <label for="cuit">CUIT</label>
+              <input type="text" name="cuit" id="cuit" />
+            </div>
+          </div>
+          <!-- ROW 2 -->
+          <div class="row">
+            <div class="inputs-cols">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" maxlength="50" />
+            </div>
+            <div class="inputs-cols">
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido" />
+            </div>
+          </div>
+
+          <!-- ROW 3 -->
+
+          <div class="row">
+            <div class="inputs-cols">
+              <label for="dni">DNI</label>
+              <input type="number" name="dni" id="dni" />
+            </div>
+            <div class="inputs-cols">
+              <label for="tel">Teléfono</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+          </div>
+          <!-- ROW 4 -->
+
+          <div class="row">
+            <div class="inputs-cols">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="inputs-cols">
+              <label for="email-confir">Confirmación de Email</label>
+              <input type="email" name="email-confir" id="email-confir" />
+            </div>
+          </div>
+
+          <!-- ROW 5 -->
+
+          <div class="row">
+            <div class="inputs-cols">
+              <label for="compra">N° de compra</label>
+              <input type="number" name="compra" id="compra" />
+            </div>
+            <div class="inputs-cols">
+              <label for="producto">Producto</label>
+              <input type="text" name="producto" id="producto" />
+            </div>
+          </div>
+          <div>
+            <textarea
+              name="motivo"
+              id=""
+              cols="30"
+              rows="10"
+              class="motivo"
+            ></textarea>
+          </div>
+          <div class="submit-cont">
+            <input type="submit" value="Cancelar compra" class="btn-submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

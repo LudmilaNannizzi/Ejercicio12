@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clase de formularios</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="boton-arrepentimiento">
+        <div class="textos-arrepentimiento">
+          <h2>Botón de arrepentimiento</h2>
+          <h4>Resolución 424/20202 - Devoluciones de compras de internet</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae,
+            doloremque ex facere quos iste neque corporis natus laborum. Vero,
+            dolore! Nesciunt quisquam eligendi id deserunt ad sed dolorum natus?
+          </p>
+        </div>
+        <form action="register" method="POST" class="formulario-contenedor">
+          <!-- FILA 1 -->
+          <div class="fila">
+            <div class="col">
+              <label for="empresa">Empresa *</label>
+              <input
+                type="text"
+                name="empresa"
+                id="empresa"
+                placeholder="Ingresá el nombre de la empresa"
+                class="input-cont"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="cuit">CUIT (sin esppacios)*</label>
+              <input
+                type="number"
+                name="cuit"
+                id="cuit"
+                placeholder="Ingesá el cuit"
+                class="input-cont"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- FILA 2 -->
+          <div class="fila">
+            <div class="col">
+              <label for="nombre">Nombre *</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Ingresá tu nombre"
+                class="input-cont"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="apellido">Apellido *</label>
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Ingresá tu apellido"
+                class="input-cont"
+                required
+              />
+            </div>
+          </div>
+          <!-- FILA 3 -->
+          <div class="fila">
+            <div class="col">
+              <label for="dni"> DNI *</label>
+              <input
+                type="number"
+                name="dni"
+                id="dni"
+                placeholder="Ingresá tu DNI"
+                class="input-cont"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="tel">Teléfono *</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Ingreá tu núemro de teléfono"
+                class="input-cont"
+                required
+              />
+            </div>
+          </div>
+          <!-- FILA 4 -->
+          <div class="fila">
+            <div class="col">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingresá tu imail"
+                class="input-cont"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="emailConfi">Confirmá tu email *</label>
+              <input
+                type="email"
+                name="emailConfi"
+                id="emailConfi"
+                placeholder="Confirmá tu email"
+                class="input-cont"
+                required
+              />
+            </div>
+          </div>
+          <!-- FILA 5 -->
+          <div class="fila">
+            <div class="col">
+              <label for="idCompra"> N° de Compra</label>
+              <input
+                type="number"
+                name="idCompra"
+                id="idCompra"
+                placeholder="Ingresá número de compra"
+                class="input-cont"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="producto">Producto</label>
+              <input
+                type="text"
+                name="producto"
+                id="producto"
+                placeholder="Ingreá el producto"
+                maxlength="50"
+                class="input-cont"
+                required
+              />
+            </div>
+          </div>
+          <!-- TEXTAREA -->
+          <div class="motivo">
+            <label for="motivo">Motivo de devolución *</label>
+            <textarea
+              name="motivo"
+              id="motivo"
+              cols="30"
+              rows="10"
+              placeholder="Ingresá el motivo de la devolución"
+              required
+            ></textarea>
+          </div>
+          <!-- BOTÓN SUBMIT -->
+          <div class="contenedor-submit">
+            <input type="submit" value="Cancelar compra" class="btn-cancelar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
